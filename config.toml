@@ -1,0 +1,4 @@
+baseURL = "https://dive-ors.github.io/"
+languageCode = "ko-KR"
+title = "dive-ors"
+theme = "hugo-paper"
