@@ -4,3 +4,7 @@
 [submodule "quickstart/themes/hugo-paper"]
 	path = quickstart/themes/hugo-paper
 	url = https://github.com/nanxiaobei/hugo-paper.git
+[submodule "public"]
+	path = public
+	url = https://github.com/dive-ors/dive-ors.github.io.git
+	branch = master

@@ -17,7 +17,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
   
-  <title>My First Post - dive-ors</title>
+  <title>My First Post - Paper</title>
 
   
   
@@ -97,7 +97,7 @@
     <header class="header">
   
   <p class="logo">
-    <a class="site-name" href="https://dive-ors.github.io/">dive-ors</a>
+    <a class="site-name" href="https://dive-ors.github.io/">Paper</a><a class="btn-dark"></a>
   </p>
   
 
@@ -108,13 +108,15 @@
     let darkVal = localStorage.getItem('dark');
 
     let setDark = (isDark) => {
-      bodyClx['add']('dark');
-      localStorage.setItem('dark', 'yes');
+      bodyClx[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark ? 'yes' : 'no');
     };
 
-    setDark(true);
+    setDark(darkVal ? darkVal === 'yes' : sysDark.matches);
     requestAnimationFrame(() => bodyClx.remove('not-ready'));
 
+    btnDark.addEventListener('click', () => setDark(!bodyClx.contains('dark')));
+    sysDark.addEventListener('change', (event) => setDark(event.matches));
   </script>
 
   
@@ -144,12 +146,6 @@
   
   
   
-  <nav class="post-nav">
-    
-    <a class="prev" href="https://dive-ors.github.io/posts/elastic-search-setup/"><span>←</span><span>Elastic Search Setup</span></a>
-     
-  </nav>
-  
 
   
   
@@ -158,7 +154,7 @@
 </main>
 
     <footer class="footer">
-  <p>&copy; 2022 <a href="https://dive-ors.github.io/">dive-ors</a></p>
+  <p>&copy; 2022 <a href="https://dive-ors.github.io/">Paper</a></p>
   <p>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</p>
   <p>
     <a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper 5.1</a>
