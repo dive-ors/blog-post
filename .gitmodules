@@ -8,3 +8,6 @@
 	path = public
 	url = https://github.com/dive-ors/dive-ors.github.io.git
 	branch = master
+[submodule "themes/hugo-notepadium"]
+	path = themes/hugo-notepadium
+	url = https://github.com/cntrump/hugo-notepadium.git

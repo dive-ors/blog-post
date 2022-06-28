@@ -1,4 +1,20 @@
 baseURL = "https://dive-ors.github.io/"
 languageCode = "ko-KR"
 title = "dive-ors"
-theme = "hugo-paper"
+theme = "hugo-notepadium"
+
+[params]
+style = "dark"
+
+[params.nav]
+showCategories = true       # /categories/
+showTags = true             # /tags/
+
+[[params.nav.custom]]
+title = "notepad"
+url = "https://dive-ors.github.io/"
+
+[params.syntax]
+use = "hljs"  # 1. prismjs 2. hljs 3. none
+theme = "dracula"
+darkTheme = "xcode-dark"  # apply this theme in dark mode
