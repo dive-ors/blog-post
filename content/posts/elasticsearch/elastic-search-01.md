@@ -3,6 +3,7 @@ author = "dive-ors"
 title =  "Elastic Search 01 장"
 date = "2022-04-07T22:10:26+09:00"
 draft = false
+summary = ""
 tags = [
 "elasticsearch",
 "book",
